@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ภาคผนวก ฉ - วิธีการดำเนินงาน</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=9" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">ภาคผนวก</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="appendix-ka.html">ก</a>
+        <a href="appendix-kho.html">ข</a>
+        <a href="appendix-kho2.html">ค</a>
+        <a href="appendix-cho.html">จ</a>
+        <a href="appendix-cho2.html" class="active">ฉ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="report-main">
+    <div class="container report-container">
+
+      <header class="report-head">
+        <span class="quiz-badge">ภาคผนวก ฉ</span>
+        <h1 class="report-title">วิธีการดำเนินงาน</h1>
+        <p class="report-sub">
+          แผ่นภาพนำเสนอวิธีการดำเนินงานโครงงาน FixMyRoom ตามรูปแบบ FIX-IT MODEL ทั้ง 5 ขั้นตอน รวม 9 แผ่น
+        </p>
+      </header>
+
+      <section class="gallery" id="gallery">
+
+        <img class="gal-img" src="ภาคผนวก%20ฉ/1.หน้าเเรก.png"
+             alt="หน้าปกโครงงาน FixMyRoom" data-caption="หน้าปกโครงงาน" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ฉ/2.กรอบเเนวคิด.png"
+             alt="กรอบแนวคิดของโครงงาน" data-caption="กรอบแนวคิดของโครงงาน" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ฉ/3.FIX-IT.png"
+             alt="FIX-IT MODEL" data-caption="FIX-IT MODEL ภาพรวมวิธีการดำเนินงานทั้ง 5 ขั้นตอน" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ฉ/4.ภาคผนวก%20ฉ%20F.png"
+             alt="ขั้นที่ 1 Find Problems" data-caption="ขั้นที่ 1 F : FIND PROBLEMS ค้นหาและวิเคราะห์ปัญหา" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ฉ/5.ภาคผนวก%20ฉ%20I.png"
+             alt="ขั้นที่ 2 Investigate Needs" data-caption="ขั้นที่ 2 I : INVESTIGATE NEEDS ศึกษาความต้องการของผู้ใช้งาน" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ฉ/6.ภาคผนวก%20ฉ%20X.png"
+             alt="ขั้นที่ 3 Execute Design" data-caption="ขั้นที่ 3 X : EXECUTE DESIGN ออกแบบและพัฒนาระบบ" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ฉ/7.ภาคผนวก%20ฉ%20I.png"
+             alt="ขั้นที่ 4 Implement" data-caption="ขั้นที่ 4 I : IMPLEMENT นำระบบไปใช้งานและทดสอบ" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ฉ/8.ภาคผนวก%20ฉ%20T.png"
+             alt="ขั้นที่ 5 Test and Transfer" data-caption="ขั้นที่ 5 T : TEST & TRANSFER ทดสอบ ประเมินผล และส่งต่อการใช้งาน" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ฉ/9.หน้าหลัง.png"
+             alt="หน้าปกหลัง" data-caption="หน้าปกหลัง สรุปโครงสร้างระบบ เทคโนโลยีที่ใช้ และขั้นตอนการพัฒนา" loading="lazy" />
+
+      </section>
+
+      <div class="quiz-actions">
+        <a class="btn btn-primary" href="index.html">กลับหน้าแรก</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="ปิด">&times;</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="ภาพก่อนหน้า">&#8249;</button>
+    <img class="lb-img" id="lbImg" src="" alt="" />
+    <button class="lb-nav lb-next" id="lbNext" aria-label="ภาพถัดไป">&#8250;</button>
+    <p class="lb-caption" id="lbCaption"></p>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© 2026 ภาคผนวก</p>
+    </div>
+  </footer>
+
+  <script src="js/gallery.js?v=9"></script>
+</body>
+</html>

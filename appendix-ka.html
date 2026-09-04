@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ภาคผนวก ก - แบบประเมิน</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=9" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">ภาคผนวก</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="appendix-ka.html" class="active">ก</a>
+        <a href="appendix-kho.html">ข</a>
+        <a href="appendix-kho2.html">ค</a>
+        <a href="appendix-cho.html">จ</a>
+        <a href="appendix-cho2.html">ฉ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="quiz-main">
+    <div class="container quiz-container">
+
+      <!-- ---- หน้าเริ่มต้น ---- -->
+      <section class="quiz-card" id="screenIntro">
+        <span class="quiz-badge">ภาคผนวก ก</span>
+        <h1 class="quiz-heading">แบบประเมินความพึงพอใจต่อเว็บแอปพลิเคชัน FixMyRoom</h1>
+        <p class="quiz-lead">
+          ข้อมูลทั่วไป 1 ข้อ ความพึงพอใจ <strong>11 ข้อ</strong> และข้อเสนอแนะเพิ่มเติม 1 ช่อง
+          ระบบจะแสดงคำถามทีละข้อ ใช้เวลาประมาณ 2-3 นาที
+          คำตอบจะถูกส่งเข้า Google Form ของโครงงานโดยอัตโนมัติ
+        </p>
+
+        <ul class="scale-legend">
+          <li><span class="scale-num">5</span> มากที่สุด</li>
+          <li><span class="scale-num">4</span> มาก</li>
+          <li><span class="scale-num">3</span> ปานกลาง</li>
+          <li><span class="scale-num">2</span> น้อย</li>
+          <li><span class="scale-num">1</span> น้อยที่สุด</li>
+        </ul>
+
+        <div class="quiz-actions">
+          <button class="btn btn-primary" id="btnStart">เริ่มทำแบบประเมิน</button>
+          <a class="btn btn-ghost" href="index.html">กลับหน้าแรก</a>
+        </div>
+      </section>
+
+      <!-- ---- หน้าคำถาม ---- -->
+      <section class="quiz-card is-hidden" id="screenQuiz">
+        <div class="progress-head">
+          <span class="progress-label" id="progressLabel">ข้อ 1 จาก 13</span>
+          <span class="progress-percent" id="progressPercent">0%</span>
+        </div>
+        <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+
+        <span class="quiz-section-tag" id="sectionTag">ด้านการใช้งาน</span>
+        <h2 class="question-text" id="questionText">คำถาม</h2>
+
+        <div class="options" id="options"></div>
+
+        <div class="suggest-wrap is-hidden" id="suggestWrap">
+          <textarea id="suggestInput" class="suggest-input" rows="6"
+            placeholder="พิมพ์ข้อเสนอแนะของท่าน (ไม่บังคับ)"></textarea>
+        </div>
+
+        <div class="quiz-actions quiz-actions-split">
+          <button class="btn btn-ghost" id="btnPrev">ย้อนกลับ</button>
+          <button class="btn btn-primary" id="btnNext">ถัดไป</button>
+        </div>
+
+        <p class="quiz-hint">เคล็ดลับ: กดปุ่มตัวเลขบนแป้นพิมพ์เพื่อเลือกคำตอบได้เลย</p>
+      </section>
+
+      <!-- ---- หน้าขอบคุณ ---- -->
+      <section class="quiz-card is-hidden" id="screenDone">
+        <div class="done-check">✓</div>
+        <h1 class="quiz-heading">ขอบคุณสำหรับการประเมิน</h1>
+
+        <p class="send-status is-sending" id="sendStatus">กำลังส่งคำตอบเข้า Google Form...</p>
+        <p class="send-note" id="sendNote"></p>
+
+        <div class="score-box">
+          <span class="score-label">คะแนนเฉลี่ย</span>
+          <span class="score-value" id="scoreValue">0.00</span>
+          <span class="score-level" id="scoreLevel">-</span>
+        </div>
+
+        <div class="summary" id="summary"></div>
+
+        <div class="quiz-actions">
+          <a class="btn btn-primary" href="index.html">กลับหน้าแรก</a>
+          <button class="btn btn-ghost" id="btnRestart">ทำแบบประเมินอีกครั้ง</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© 2026 ภาคผนวก</p>
+    </div>
+  </footer>
+
+  <!-- ปลายทางการส่งฟอร์ม (ซ่อนไว้ ไม่ต้องแก้ไข) -->
+  <iframe name="gformFrame" id="gformFrame" title="google form target" class="gform-frame"></iframe>
+
+  <script src="js/appendix-ka.js?v=9"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ภาคผนวก ค - ภาพหน้าจอระบบ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=9" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">ภาคผนวก</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="appendix-ka.html">ก</a>
+        <a href="appendix-kho.html">ข</a>
+        <a href="appendix-kho2.html" class="active">ค</a>
+        <a href="appendix-cho.html">จ</a>
+        <a href="appendix-cho2.html">ฉ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="report-main">
+    <div class="container report-container">
+
+      <header class="report-head">
+        <span class="quiz-badge">ภาคผนวก ค</span>
+        <h1 class="report-title">ภาพหน้าจอระบบ</h1>
+        <p class="report-sub">
+          ภาพหน้าจอการใช้งานจริงของระบบ FixMyRoom จำนวน 7 ภาพ
+          และคลิปแสดงผลบนโทรศัพท์มือถือ 1 คลิป
+        </p>
+      </header>
+
+      <section class="gallery gallery-wide" id="gallery">
+
+        <img class="gal-img" src="ภาคผนวก%20ค/1.เข้าสู่ระบบ.png"
+             alt="หน้าเข้าสู่ระบบ" data-caption="หน้าเข้าสู่ระบบ" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ค/2.ผังห้องเรียน.png"
+             alt="ผังห้องเรียน" data-caption="ผังห้องเรียน" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ค/3.หน้าเเจ้งซ่อม.png"
+             alt="หน้าแจ้งซ่อม" data-caption="หน้าแจ้งซ่อม" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ค/4.ติดตามสถานะ.png"
+             alt="หน้าติดตามสถานะ" data-caption="หน้าติดตามสถานะ" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ค/5.ตรวจสอบพังจริง.png"
+             alt="หน้าตรวจสอบยืนยันความเสียหาย" data-caption="หน้าตรวจสอบยืนยันความเสียหาย" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ค/6.จัดการงานซ่อม.png"
+             alt="หน้าจัดการงานซ่อม" data-caption="หน้าจัดการงานซ่อม" loading="lazy" />
+
+        <img class="gal-img" src="ภาคผนวก%20ค/7.สถิติ.png"
+             alt="หน้าสถิติ" data-caption="หน้าสถิติ" loading="lazy" />
+
+        <video class="gal-video" src="ภาคผนวก%20ค/8.เเสดงผลมือถือ.mp4"
+               autoplay loop muted playsinline controls preload="metadata"
+               aria-label="คลิปการแสดงผลบนโทรศัพท์มือถือ"></video>
+
+      </section>
+
+      <div class="quiz-actions">
+        <a class="btn btn-primary" href="index.html">กลับหน้าแรก</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="ปิด">&times;</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="ภาพก่อนหน้า">&#8249;</button>
+    <img class="lb-img" id="lbImg" src="" alt="" />
+    <button class="lb-nav lb-next" id="lbNext" aria-label="ภาพถัดไป">&#8250;</button>
+    <p class="lb-caption" id="lbCaption"></p>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© 2026 ภาคผนวก</p>
+    </div>
+  </footer>
+
+  <script src="js/gallery.js?v=9"></script>
+</body>
+</html>

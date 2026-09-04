@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ภาคผนวก จ - ผลการประเมินความพึงพอใจ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=9" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">ภาคผนวก</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="appendix-ka.html">ก</a>
+        <a href="appendix-kho.html">ข</a>
+        <a href="appendix-kho2.html">ค</a>
+        <a href="appendix-cho.html" class="active">จ</a>
+        <a href="appendix-cho2.html">ฉ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="report-main">
+    <div class="container report-container">
+
+      <header class="report-head">
+        <span class="quiz-badge">ภาคผนวก จ</span>
+        <h1 class="report-title">ผลการประเมินความพึงพอใจ</h1>
+        <p class="report-sub" id="reportSub"></p>
+      </header>
+
+      <!-- สรุปภาพรวม -->
+      <section class="stat-row" id="statRow"></section>
+
+      <!-- แหล่งข้อมูลต้นฉบับ -->
+      <section class="report-block">
+        <h2 class="block-title">แหล่งข้อมูลต้นฉบับ</h2>
+        <p class="source-note">
+          ข้อมูลทั้งหมดในภาคผนวกนี้มาจากคำตอบจริงของผู้ตอบแบบประเมิน
+          สามารถตรวจสอบย้อนกลับได้จากลิงก์ด้านล่าง (เปิดดูได้เท่านั้น แก้ไขข้อมูลไม่ได้)
+        </p>
+
+        <div class="source-grid">
+
+          <a class="source-card" target="_blank" rel="noopener"
+             href="https://docs.google.com/forms/d/e/1FAIpQLSegSESQQTio4wEL1R5hwi4hsvNkxkRtUD606WuPFT7syeeYjA/viewform">
+            <span class="source-icon">📋</span>
+            <span class="source-body">
+              <strong>แบบประเมิน (Google Form)</strong>
+              <span class="source-desc">แบบประเมินฉบับจริงที่ใช้เก็บข้อมูล</span>
+              <span class="source-tag">เปิดดู / ตอบได้ · แก้ไขแบบฟอร์มไม่ได้</span>
+            </span>
+          </a>
+
+          <a class="source-card" target="_blank" rel="noopener"
+             href="https://docs.google.com/spreadsheets/d/149NHcW5IESpYyMtB0cqbniRGCyGG9Bimalmto-SSJkI/preview">
+            <span class="source-icon">📊</span>
+            <span class="source-body">
+              <strong>ข้อมูลคำตอบดิบ (Google Sheets)</strong>
+              <span class="source-desc">ตารางคำตอบรายบุคคลทั้ง 105 ชุด</span>
+              <span class="source-tag">โหมดดูอย่างเดียว · แก้ไขข้อมูลไม่ได้</span>
+            </span>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- ตอนที่ 1 -->
+      <section class="report-block">
+        <h2 class="block-title">ตอนที่ 1 &nbsp;ข้อมูลทั่วไปของผู้ตอบแบบประเมิน</h2>
+        <div class="table-scroll">
+          <table class="data-table" id="tableStatus"></table>
+        </div>
+      </section>
+
+      <!-- ตอนที่ 2 -->
+      <section class="report-block">
+        <h2 class="block-title">ตอนที่ 2 &nbsp;ความพึงพอใจต่อการใช้งานระบบ</h2>
+        <div class="table-scroll">
+          <table class="data-table" id="tableItems"></table>
+        </div>
+      </section>
+
+      <!-- ตอนที่ 3 -->
+      <section class="report-block">
+        <h2 class="block-title">ตอนที่ 3 &nbsp;ข้อเสนอแนะเพิ่มเติม</h2>
+        <div id="notesBox"></div>
+      </section>
+
+      <!-- เกณฑ์แปลผล -->
+      <section class="report-block">
+        <h2 class="block-title">เกณฑ์การแปลความหมายค่าเฉลี่ย</h2>
+        <div class="table-scroll">
+          <table class="data-table criteria-table">
+            <thead>
+              <tr><th>ช่วงคะแนนเฉลี่ย</th><th>ระดับความพึงพอใจ</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>4.51 - 5.00</td><td>มากที่สุด</td></tr>
+              <tr><td>3.51 - 4.50</td><td>มาก</td></tr>
+              <tr><td>2.51 - 3.50</td><td>ปานกลาง</td></tr>
+              <tr><td>1.51 - 2.50</td><td>น้อย</td></tr>
+              <tr><td>1.00 - 1.50</td><td>น้อยที่สุด</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="quiz-actions">
+        <a class="btn btn-primary" href="index.html">กลับหน้าแรก</a>
+        <a class="btn btn-ghost" href="appendix-ka.html">ไปทำแบบประเมิน</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© 2026 ภาคผนวก</p>
+    </div>
+  </footer>
+
+  <script src="js/data-cho.js?v=9"></script>
+  <script src="js/appendix-cho.js?v=9"></script>
+</body>
+</html>
